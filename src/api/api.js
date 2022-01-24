@@ -9,6 +9,14 @@ class apiService {
     getDetailsContact(){
         return axios.get(`${URL_API}/contacts/clients/2670/`, HEADERS)
     }
+
+    getDataCellphone(){
+        return axios.get(`${URL_API}/contacts/clients/2670/phones/`, HEADERS)
+    }
+
+    getDataAddresses(){
+        return axios.get(`${URL_API}/contacts/clients/2670/addresses/`, HEADERS)
+    }
 }
 
 export default new apiService()
